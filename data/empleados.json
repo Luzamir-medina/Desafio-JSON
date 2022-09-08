@@ -1,0 +1,55 @@
+{
+    "empleados":[
+    {
+    "identificación":0, "nombre":"Marcelo",
+    "apellido":"Silva", "salario":3200.00, "área":"SM"
+    },
+    {
+    "identificación": 1, "nombre":"Washington", "apellido":"Ramos", "salario":2700.00, "área":"UD"
+    },
+    {
+    "identificación": 2, "nombre":"Sergio",
+    "apellido":"Pino", "salario":2450.00, "área":"SD"
+    },
+    {
+    "identificación": 3, "nombre":"Bernardo", "apellido":"Costa", "salario":3700.00, "área":"SM"
+    },
+    {
+    "identificación": 4, "nombre":"Cleverton", "apellido":"Farias", "salario":2750.00, "área":"SD"
+    },
+    {
+    "identificación": 5, "nombre":"Abraham", "apellido":"Campos",
+     
+    "salario":2550.00, "área":"SD"
+    },
+    {
+    "identificación": 6, "nombre":"Leticia", "apellido":"Farias", "salario":2450.00, "área":"UD"
+    },
+    {
+    "identificación": 7, "nombre":"Fernando", "apellido":"Ramos", "salario":2400.00, "área":"SD"
+    },
+    {
+    "identificación": 8, "nombre":"Marcelo", "apellido":"Farias", "salario":2550.00, "área":"UD"
+    },
+    {
+    "identificación": 9, "nombre": "Fabio",
+    "apellido":"Souza", "salario":2750.00, "área":"SD"
+    },
+    {
+    "identificación": 10, "nombre":"Clederson", "apellido":"Oliveira", "salario":2500.00, "área":"SD"
+    }
+    ],
+    "áreas":[
+    {
+    "código":"SD", "nombre":"Desarrollo de software"
+    },
+    {
+    "código":"SM", "name":"Administración de software"
+    },
+     
+    {
+    "código":"UD", "name":"Diseñador de UI/UX"
+    }
+    ]
+    }
+    

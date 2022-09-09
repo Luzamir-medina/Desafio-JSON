@@ -1,42 +1,42 @@
-//console.log('correcto');
+'use strict';
 
-document.querySelector('#boton').addEventListener('click', traerDatos);
+function main() {
+  document.querySelector('#boton').addEventListener('click', traeDatos);
+}
 
-function traerDatos(){
-   
-  //console,log('dentro de la funcion');
+document.addEventListener('DOMContentLoaded', main, false);
 
-  const xhttp = new XMLHttpRequest();
+function traeDatos() {
 
+  //  console.log('dentro de la funcion');
 
-  xhttp.open('GET', 'empleados.json', true);
+  let empleados = new XMLHttpRequest();
 
-  xhttp.send();
+  empleados.open('GET', '/empleados.json', true);
 
-  xhttp.onreadystatechange = function(){
+  empleados.send();
 
-    if(this.readyState == 4 && this.status == 200){
+  empleados.onreadystatechange = function() {
 
-      //console.log(this.responseText);
-      let datos = JSON.parse(this.responseText);
-      //console.log(datos);
-      let respuesta =document.querySelector('#respuesta');
-      respuesta.innerHTML = ' ';
+    if (this.readyState == 4 && this.status == 200) {
 
-      for(let item of datos){
-       // console.log(item.nombre);
-       respuesta.innerHTML += `
-            <tr>
-               <td>${item.identificación}</td>
-               <td>${item.nombre}</td> 
-               <td>${item.apellido}</td>
-               <td>${item.salario}</td> 
-               <td>${item.área}</td> 
-            </tr>
-       `
+      // console.log(this.resposeText);
+      let datos = JSON.parse(this.response);
+
+      let respuesta = document.querySelector('#respuesta');
+
+      respuesta.innerHTML = '';
+
+      for (let item of datos.empleados) {
+        // console.log( item.apellido);
+        respuesta.innerHTML += `<tr>
+           <td>${item.identificacion}</td>
+           <td>${item.nombre}</td>
+           <td>${item.apellido}</td>
+           <td>${item.salario}</td>
+           <td>${item.area}</td>
+         </tr>`
       }
-
     }
   }
-
 }

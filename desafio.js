@@ -6,37 +6,24 @@ function main() {
 
 document.addEventListener('DOMContentLoaded', main, false);
 
-function traeDatos() {
+async function traeDatos() {
 
-  //  console.log('dentro de la funcion');
+  let empleados = await fetch("/empleados.json");
 
-  let empleados = new XMLHttpRequest();
+  let datos = await empleados.json();
 
-  empleados.open('GET', '/empleados.json', true);
+  let respuesta = document.querySelector('#respuesta');
 
-  empleados.send();
+  respuesta.innerHTML = '';
 
-  empleados.onreadystatechange = function() {
-
-    if (this.readyState == 4 && this.status == 200) {
-
-      // console.log(this.resposeText);
-      let datos = JSON.parse(this.response);
-
-      let respuesta = document.querySelector('#respuesta');
-
-      respuesta.innerHTML = '';
-
-      for (let item of datos.empleados) {
-        // console.log( item.apellido);
-        respuesta.innerHTML += `<tr>
+  for (let item of datos.empleados) {
+    // console.log( item.apellido);
+    respuesta.innerHTML += `<tr>
            <td>${item.identificacion}</td>
            <td>${item.nombre}</td>
            <td>${item.apellido}</td>
            <td>${item.salario}</td>
            <td>${item.area}</td>
          </tr>`
-      }
-    }
   }
 }

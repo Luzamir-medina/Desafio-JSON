@@ -1,7 +1,19 @@
 'use strict';
+/*  var btn = document.getElementById('#boton'),
+    respuesta = document.getElementById('#respuesta'),
+    contador = 0;
+ */
 
 function main() {
-  document.querySelector('#boton').addEventListener('click', traeDatos);
+    document.querySelector('#boton').addEventListener('click', traeDatos);
+/*   if (contador == 0) {
+respuesta.classList.add('respuesta');
+contador = 1
+ }
+else {
+respuesta.classList.remove('respuesta');
+contador = 0;
+} */
 }
 
 document.addEventListener('DOMContentLoaded', main, false);

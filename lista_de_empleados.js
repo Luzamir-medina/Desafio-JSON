@@ -6,14 +6,14 @@
 
 function main() {
     document.querySelector('#boton').addEventListener('click', traeDatos);
-/*   if (contador == 0) {
-respuesta.classList.add('respuesta');
-contador = 1
- }
-else {
-respuesta.classList.remove('respuesta');
-contador = 0;
-} */
+    /*   if (contador == 0) {
+    respuesta.classList.add('respuesta');
+    contador = 1
+     }
+    else {
+    respuesta.classList.remove('respuesta');
+    contador = 0;
+    } */
 }
 
 document.addEventListener('DOMContentLoaded', main, false);

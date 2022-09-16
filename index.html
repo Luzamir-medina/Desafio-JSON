@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Empresas </title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-  <script src="lista_empleados.js"></script>
 
 
 </head>
@@ -19,28 +18,39 @@
     </div>
 
 </div> -->
+
  <div class="contenedor">
     <div class="section">
-      <botton class="btn" id="boton"> Lista de empleados </botton>
-     <botton class="btn" id="boton2"> Empleado que mas Gana </botton>
-    <botton class="btn" id="boton3"> Empleado que menos Gana </botton>
-    <botton class="btn" id="boton4"> Salario medio</botton>
-    <botton class="btn" id="boton5"> Total de empleados</botton>
+      <botton class="btn" id="Lista_de_empleados"> Lista de empleados </botton>
+     <botton class="btn" id="empleado_que_mas_Gana "> Empleado que mas Gana </botton>
+    <botton class="btn" id="empleado_que_menos_Gana"> Empleado que menos Gana </botton>
+    <botton class="btn" id="salario_medio"> Salario medio</botton>
+    <botton class="btn" id="total_de_empleados"> Total de empleados</botton>
+    <botton class="btn" id="refrescar"> Refrescar</botton>
+
         </div>
        <div>
       <table>
         <thead>
-          <th>Identificacion</th>
-          <th>Nombre</th>
-          <th>Apellido</th>
-          <th>Salario</th>
-          <th>Area</th>
+            <th>Identificacion</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Salario</th>
+            <th>Area</th>
         </thead>
         <tbody class="respuesta" id="respuesta">
 
         </tbody>
       </table>
     </div>
+
+    <script src="lista_de_empleados.js"></script>
+    <script src="empleado_que_mas_gana.js"></script>
+    <script src="empleado_que_menos_gana.js"></script>
+    <script src="salario_medio.js"></script>
+    <script src="total_de_empleados.js"></script>
+
+
 </body>
 
 </html>

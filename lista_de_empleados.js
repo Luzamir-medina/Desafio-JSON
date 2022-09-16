@@ -1,21 +1,13 @@
 'use strict';
-/*  var btn = document.getElementById('#boton'),
-    respuesta = document.getElementById('#respuesta'),
-    contador = 0;
- */
+
 
 function main() {
-    document.querySelector('#boton').addEventListener('click', traeDatos);
-    /*   if (contador == 0) {
-    respuesta.classList.add('respuesta');
-    contador = 1
-     }
-    else {
-    respuesta.classList.remove('respuesta');
-    contador = 0;
-    } */
+    document.querySelector('#Lista_de_empleados').addEventListener('click', traeDatos);
+    document.querySelector('#Refrescar').addEventListener('click', refresh);
 }
-
+function refresh() {
+    window.location.reload("Refresh");
+}
 document.addEventListener('DOMContentLoaded', main, false);
 
 async function traeDatos() {
@@ -37,5 +29,12 @@ async function traeDatos() {
            <td>${item.salario}</td>
            <td>${item.area}</td>
          </tr>`
-  }
+    }
 }
+
+/*definicion de For: Un for en programación se usa cuando queremos repetir
+ un conjunto de instrucciones un número finito de veces.
+ La instrucción for permite repetir una instrucción o
+ una instrucción compuesta un número especificado de veces.
+  El cuerpo de una instrucción for se ejecuta cero o más veces hasta
+ que una condición opcional sea false*/

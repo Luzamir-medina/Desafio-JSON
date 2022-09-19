@@ -1,4 +1,4 @@
-'use strict';
+/* 'use strict';
 
 function medio() {
     document.querySelector('#salario_medio').addEventListener('click', salario_medio);
@@ -13,4 +13,5 @@ async function salario_medio() {
 
     let respuesta = document.querySelector('#respuesta');
 
-    respuesta.innerHTML = '';
+    respuesta.innerHTML = '';++
+ */

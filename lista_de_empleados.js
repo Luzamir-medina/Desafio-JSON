@@ -3,10 +3,10 @@
 
 function main() {
     document.querySelector('#Lista_de_empleados').addEventListener('click', traeDatos);
-    document.querySelector('#Refrescar').addEventListener('click', refresh);
+    document.querySelector('#refrescar').addEventListener('click', refresh);
 }
 function refresh() {
-    window.location.reload("Refresh");
+    window.location.reload("refrescar");
 }
 document.addEventListener('DOMContentLoaded', main, false);
 

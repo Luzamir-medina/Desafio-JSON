@@ -33,3 +33,4 @@ async function mas_gana() {
     }
     console.log(mayor);
 }
+
